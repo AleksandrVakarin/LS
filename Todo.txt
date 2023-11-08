@@ -1,0 +1,2 @@
+Добавить dynamicOrderItem.js на хостинг ! 
+Удалить скрипт orderItem.js из index.html !

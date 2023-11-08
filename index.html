@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lula|Shop</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styleForm.css">
+</head>
+<body>
+	<header>
+		<h1 class="title">Lula Shop<br>
+  			<span>Изделия ручной работы</span>
+		</h1>
+		<nav>
+			<a href = "#delivery">Доставка</a>
+			<a href = "#payment">Оплата</a>
+			<a href = "#contacts">Контакты</a>
+			<a href = "#gallery">В наличии</a>
+		</nav>
+		<a id="show-autorization-admin__panel" >Для администратора</a>
+   	</header>
+
+
+<!-- Admin panel -->
+	<div id="autorization-admin__form">
+			<span>Войти как администратор</span>
+		<form class="autorization-form">
+	        <input id="login" name="login" placeholder="Логин">
+	        <input id="password" type="password" name="password" placeholder="Пароль">
+	        <input type="submit" value="Войти">
+	    </form>
+	</div>		
+
+	<div id="add-item__form">
+		<span>Добавление карточек товара</span>
+	    <form class="add-form" action="server.php" method="POST" enctype="multipart/form-data">
+		  	<label for="name">Название товара:</label>
+		  	<input type="text" name="name" id="name" placeholder="Название товара" required><br>
+		  	<label for="price">Цена:</label>
+		  	<input type="number" name="price" id="price" placeholder="Цена" required><br>
+		  	<input type="file" name="image" id="image">
+		  	<button type="submit">Добавить</button>
+		</form>
+	</div>
+
+
+	<article class="description">
+	    <section class="description__item">
+		    <h2><img class="description__item-logo" src="backgroundImg/yoga-tree-logo.jpg" alt = "logo"><br>Лула оберег</h2>
+		    Лула в волосы это оберег Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Voluptates et mollitia minus, magni nostrum perspiciatis aut corporis dolore expedita numquam totam saepe obcaecati sit deserunt quaerat! Quasi placeat praesentium veniam.
+	    </section>
+  
+	    <section class="description__item">
+		    <h2><img class="description__item-logo" src="backgroundImg/yoga-tree-logo.jpg" alt = "logo"><br>Лула украшение</h2>
+      		Лула это украшение Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, nobis laborum distinctio rerum labore ullam aliquid earum commodi consequuntur dolor, perspiciatis tempora laboriosam facilis necessitatibus quam aperiam a quos expedita?
+  	    </section>
+
+  	    <section class="description__item">
+		    <h2><img class="description__item-logo" src="backgroundImg/yoga-tree-logo.jpg" alt = "logo"><br>Браслеты ручной работы</h2>
+      		Лула это украшение Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, nobis laborum distinctio rerum labore ullam aliquid earum commodi consequuntur dolor, perspiciatis tempora laboriosam facilis necessitatibus quam aperiam a quos expedita?
+  	    </section>
+	</article>
+
+
+	<h3>Работы в наличии:</h3>
+	<main class = "cards">
+		<div id="gallery">
+
+			<article class="card">
+				<p id="item_1">
+				    Item-1
+				    <br>
+				    <img src="cardsPictures/Item-1/item-1.jpg" alt="item_1" tabindex="0">
+				    <br>
+				    Цена: 1000р
+				</p>
+				<details closed >
+				  	<summary class="open-form"></summary>
+				    <form class="order-form__item-1">
+				      	<h4 id="form-head">Введите данные!</h4>
+				      	<div class="order-form">
+				        	<label class="order-form__content" id="label-name" for="text-input-name-item-1">Имя</label>
+				        	<div class="order-form__star-1">*
+				          		<input class="order-form__input" id="text-input-name-item-1" placeholder="Введите ваше имя">
+				        	</div>
+				    	</div>
+				      	<div class="order-form">
+				        	<label class="order-form__content" id="label-phone" for="text-input-phone-item-1">Номер телефона</label>
+				        	<div class="order-form__star-2">*
+				          		<input class="order-form__input" id="text-input-phone-item-1" placeholder="Введите ваш номер">
+				        	</div>
+				      	</div>
+				      	<button id="order-form__button" value="submit">Заказать</button>
+				        <p class="product-status" style="display: none;">Товар закончился</p>
+				    </form>
+				</details>
+			  	В наличии: <b class="quantity">2</b>
+			</article>
+
+			<article class="card">
+				<p id="item_2">
+				    Item-2
+				    <br>
+				    <img src="cardsPictures/Item-2/item-2.jpg" alt="item_2" tabindex="0">
+				    <br>
+				    Цена: 2000р
+				</p>
+				<details closed>
+				    <summary class="open-form"></summary>
+				    <form class="order-form__item-2">
+				        <h4 id="form-head">Введите данные!</h4>
+				        <div class="order-form">
+				          	<label class="order-form__content" id="label-name" for="text-input-name-item-2">Имя</label>
+				          	<div class="order-form__star-1">*
+				            	<input class="order-form__input" id="text-input-name-item-2" placeholder="Введите ваше имя">
+				          	</div>
+				        </div>
+				        <div class="order-form">
+				          	<label class="order-form__content" id="label-phone" for="text-input-phone-item-2">Номер телефона</label>
+				          	<div class="order-form__star-2">*
+				            	<input class="order-form__input" id="text-input-phone-item-2" placeholder="Введите ваш номер">
+				          	</div>
+				        </div>
+				        <button id="order-form__button" value="submit">Заказать</button>
+				        <p class="product-status" style="display: none;">Товар закончился</p>
+				    </form>
+				</details>
+			  	В наличии: <b class="quantity">5</b>
+			</article>
+
+			<article class="card">
+			  	<p id="item_3">
+			    Item-3
+			    	<br>
+			    	<img src="cardsPictures/Item-2/item-2.jpg" alt="item_3" tabindex="0">
+			    	<br>
+			    	Цена: 3000р
+			  	</p>
+			  	<details closed>
+			    	<summary class="open-form"></summary>
+			      	<form class="order-form__item-3">
+			        	<h4 id="form-head">Введите данные!</h4>
+			        	<div class="order-form">
+			          		<label class="order-form__content" id="label-name" for="text-input-name-item-3">Имя</label>
+			          		<div class="order-form__star-1">*
+			            		<input class="order-form__input" id="text-input-name-item-3" placeholder="Введите ваше имя">
+			          		</div>
+			        	</div>
+			        	<div class="order-form">
+			          		<label class="order-form__content" id="label-phone" for="text-input-phone-item-3">Номер телефона</label>
+			          		<div class="order-form__star-2">*
+			            		<input class="order-form__input" id="text-input-phone-item-3" placeholder="Введите ваш номер">
+			          		</div>
+			        	</div>
+			        	<button id="order-form__button" value="submit">Заказать</button>
+			        	<p class="product-status" style="display: none;">Товар закончился</p>
+			      	</form>
+			  	</details>
+			  	В наличии: <b class="quantity">3</b>
+			</article>
+
+			<article class="card">
+				<p id="item_4">
+				    Item-4
+				    <br>
+				    <img src="cardsPictures/Item-1/item-1.jpg" alt="item_4" tabindex="0">
+				    <br>
+				    Цена: 1000р
+				</p>
+				<details closed >
+				    <summary class="open-form"></summary>
+				    <form class="order-form__item-4">
+				        <h4 id="form-head">Введите данные!</h4>
+				        <div class="order-form">
+				            <label class="order-form__content" id="label-name" for="text-input-name-item-4">Имя</label>
+				            <div class="order-form__star-1">*
+				              	<input class="order-form__input" id="text-input-name-item-4" placeholder="Введите ваше имя">
+				            </div>
+				        </div>
+				        <div class="order-form">
+				            <label class="order-form__content" id="label-phone" for="text-input-phone-item-4">Номер телефона</label>
+				            <div class="order-form__star-2">*
+				              	<input class="order-form__input" id="text-input-phone-item-4" placeholder="Введите ваш номер">
+				            </div>
+				        </div>
+				        <button id="order-form__button" value="submit">Заказать</button>
+				        <p class="product-status" style="display: none;">Товар закончился</p>
+				    </form>
+				</details>
+			  	В наличии: <b class="quantity">2</b>
+			</article>
+
+		</div>
+	</main>
+
+	<div id="container"></div>
+
+    <footer class="inform">
+  		<p id="delivery">Доставка почтой или транспортной компанией на указанный вами адрес!</p>
+		<p id="payment">Оплата переводом при получении посылки!</p>
+		<p id="contacts">Контакты: +79822468896<br>lulashop.gmail.com</p>
+		<p class="logo-picture"><img class="logo" src="backgroundImg/yogaTreeLogo.png" alt = "logo"></p><br>
+		<details closed class="conditions">
+				<summary>Условия доставки и оплаты!</summary>
+            	<p>Доставка осуществляется почтой Росии или транспортной компанией на указанный вами адрес!</p>
+            	<p>Оплата переводом при получении посылки!</p>
+        </details>
+        <p class="rights">ITS. All rights reserved.</p>
+	</footer>
+	<script type="text/javascript" src="dynamicOrderItem.js"></script>
+	<!--  -->
+	<script type="text/javascript" src="updateOrderItem.js"></script>
+	<!-- <script type="text/javascript" src="orderItem.js"></script> -->
+	<!-- <script type="text/javascript" src="quantity.js"></script> -->
+	<script type="text/javascript" src="adminAuthor.js"></script>
+	<script type="text/javascript" src="adminPanel.js"></script>
+</body>
+</html>
