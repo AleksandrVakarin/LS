@@ -12,13 +12,12 @@ header {
 	text-align: left;
 	padding-bottom: 25px;
 	padding-left: 10px;
-
 }
 
 @media screen and (max-width: 375px) {
 	header {
     background-size: 150%;
-    }
+  }
 }
 
 h1.title {
@@ -29,25 +28,23 @@ h1.title {
 	padding: 5px;
  	line-height: 0.7;
  	background-color: rgba(16, 22, 16, 0.55);
- 
 }
 
 h1.title span {
-   	font-size: 40%;
-   	font-family: Arial, "Times New Roman", serif;
+  font-size: 40%;
+  font-family: Arial, "Times New Roman", serif;
 }
 
 @media screen and (max-width: 375px) {
 	h1,
 	h2 {
     font-size: 140%;
-    }
+  }
 }
 
 nav {
 	border-radius: 30px;
 	text-align: right;
-
 }
 
 nav a,
@@ -74,14 +71,14 @@ nav a:hover {
 	nav {
     text-align: center;
     font-size: 90%;
-   }
+  }
 }
 
 @media screen and (max-width: 375px) {
 	nav a,
 		a {
     font-size: 80%;
-   }
+  }
 }
 
 #show-autorization-admin__panel {
@@ -118,9 +115,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  	.description {
-    	flex-wrap: wrap;
-  	}
+  .description {
+    flex-wrap: wrap;
+  }
 }
 
 section h2 {	
@@ -187,12 +184,10 @@ h3 {
    	font-size: 100%;
   }
   .card {
-  	width: 180px;
+  	width: 145px;
   }
-
   .card p img {
-  	height: 40%;
-  	width: 70%;
+  	width: 90%;
   }
 }
 
@@ -221,70 +216,28 @@ h3 {
 }
 
 #gallery {
-  	-moz-user-select: none; 
-  	user-select: none;
+  -moz-user-select: none; 
+  user-select: none;
 }
 
 #gallery img {
-  	max-width: 340px;
-  	max-height: 200px;
-  	cursor: zoom-in;
+  max-width: 320px;
+  max-height: 180px;
+  cursor: zoom-in;
 }
 
 #gallery img:focus {
-  	position: fixed;
-  	top: 50%;
-  	left: 50%;
-  	z-index: 31;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 31;
  	max-width: 100%;
-  	max-height: 100%;
-  	outline: none;
-  	pointer-events: none;
-  	-webkit-transform: translate(-50%, -50%);
-  	transform: translate(-50%, -50%);
-  	-moz-user-select: none; user-select: none;
-}
-
-@media screen and (max-width: 1024px) {
-	#gallery img:focus {
-		height: 90%;
-		width: 70%;
-	}
-}
-
-@media screen and (max-width: 768px) {
-	#gallery img:focus {
-		height: 60%;
-		width: 70%;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	#gallery img:focus {
-		height: 55%;
-		width: 70%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	#gallery img:focus {
-		height: 55%;
-		width: 85%;
-	}
-}
-
-@media screen and (max-width: 360px) {
-	#gallery img:focus {
-		height: 40%;
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	#gallery img:focus {
-		height: 40%;
-		width: 95%;
-	}
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
 }
 
 #gallery img:focus ~ content {
@@ -318,7 +271,6 @@ summary::marker {
   display: none;
 }
 
-
 .open-form {
 	border: none;
 	border-radius: 10px;
@@ -349,7 +301,6 @@ summary::marker {
   box-sizing: border-box;
 }
 
-
 div p button {
 	border: none;
 	border-radius: 10px;
@@ -374,7 +325,6 @@ div p button:active {
 	border: 3px solid #FAF1F1;
 	font-size: 90%;
 }
-
 
 .inform {
 	background: linear-gradient(to top, rgba(151, 180, 79, 1), rgba(255, 232, 247, 0.64));
@@ -431,7 +381,7 @@ div p button:active {
  	line-height: 0.9;
  	text-align: center;
  	width: 100%;
- }
+}
 
 footer details {
 	font-style: italic;
@@ -462,4 +412,4 @@ footer details > summary {
 	padding: 10px;
 	margin: 10px;
   text-align: center;
- }
+}
