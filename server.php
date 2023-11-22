@@ -2,9 +2,10 @@
 // Проверяем, был ли отправлен POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Проверяем наличие данных
-    if (isset($_POST['name']) && isset($_POST['price']) && isset($_FILES['image'])) {
+    if (isset($_POST['name']) && isset($_POST['price']) && isset($_POST['quantity']) && isset($_FILES['image'])) {
         $name = $_POST['name'];
         $price = $_POST['price'];
+        $quantity = $_POST['quantity'];
         // Проверяем существование файла
         if (isset($_FILES['image']['name']) && $_FILES['image']['error'] == 0) {
             $image = $_FILES['image'];
@@ -37,6 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     // Обновление содержимого JavaScript-файла
                     $updatedScript = str_replace($itemsArrayString, implode(', ', $itemsArray), $script);
                     file_put_contents('orderItem.js', $updatedScript);
+                    
                     // Создаем HTML-код нового элемента
                     $element = "<article class='card'>";
                     $element .= "<p id='item_$counter'>$name<br><img src='$targetPath' alt='item_$counter' tabindex='0'><br>Цена: $price</p>";
@@ -60,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $element .= "<p class='product-status' style='display: none;'>Товар закончился</p>";
                     $element .= "</form>";
                     $element .= "</details>";
-                    $element .= "В наличии: <b class='quantity'>2</b>";
+                    $element .= "В наличии: <b class='quantity'>$quantity</b>";
                     $element .= "</article>";
                     
                     // Считываем содержимое файла index.html
