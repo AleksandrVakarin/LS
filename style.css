@@ -216,59 +216,62 @@ h3 {
 }
 
 #gallery {
-  -moz-user-select: none; 
-  user-select: none;
+	-moz-user-select: none; 
+  	user-select: none;
 }
 
 #gallery img {
-  max-width: 320px;
-  max-height: 180px;
-  cursor: zoom-in;
+  	max-width: 320px;
+  	max-height: 180px;
+  	cursor: zoom-in;
 }
 
 #gallery img:focus {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 31;
- 	max-width: 100%;
-  max-height: 100%;
-  outline: none;
-  pointer-events: none;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -moz-user-select: none; user-select: none;
+  	position: fixed;
+  	top: 50%;
+  	left: 50%;
+  	z-index: 31;
+  	max-width: 90%;
+  	max-height: 450px;
+  	width: auto;
+  	height: auto;
+  	outline: none;
+  	pointer-events: none;
+  	-webkit-transform: translate(-50%, -50%);
+  	transform: translate(-50%, -50%);
+  	-moz-user-select: none; 
+  	user-select: none;
 }
 
 #gallery img:focus ~ content {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 30;
-  background: rgba(240,240,240,.9);
-  cursor: zoom-out;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	z-index: 30;
+  	background: rgba(240,240,240,.9);
+  	cursor: zoom-out;
 }
 
-details > summary {
-  cursor: pointer;
+article > details > summary {
+  	cursor: pointer;
 }
 
-summary::before {
-  content: "Заказать";
+article > details > summary::before {
+  	content: "Заказать";
 }
 
-details[open] > summary::before {
-  content: "Отменить";
+article > details[open] > summary::before {
+  	content: "Отменить";
 }
 
-summary::-webkit-details-marker {
-  display: none;
+article > details > summary::-webkit-details-marker {
+  	display: none;
 }
 
-summary::marker {
-  display: none;
+article > details > summary::marker {
+  	display: none;
 }
 
 .open-form {
@@ -289,16 +292,16 @@ summary::marker {
 }
 
 .open-form:hover {
-  opacity: 0.7;
-  font-size: 105%;
+  	opacity: 0.7;
+  	font-size: 105%;
 }
 
 .open-form:active {
-  border: 3px solid #FAF1F1;
-  font-size: 90%;
-  margin: 2px;
-  border-radius: 15px;
-  box-sizing: border-box;
+  	border: 3px solid #FAF1F1;
+  	font-size: 90%;
+  	margin: 2px;
+  	border-radius: 15px;
+  	box-sizing: border-box;
 }
 
 div p button {
@@ -312,8 +315,8 @@ div p button {
 	font-weight: bold;
 	font-size: 100%;
 	line-height: 16px;
-  color: #FFFFFF;
-  margin: 5px;
+  	color: #FFFFFF;
+  	margin: 5px;
 }
 
 div p button:hover {
@@ -330,7 +333,7 @@ div p button:active {
 	background: linear-gradient(to top, rgba(151, 180, 79, 1), rgba(255, 232, 247, 0.64));
 	display: flex;
 	flex-wrap: wrap;
-  justify-content: center;
+  	justify-content: center;
 	background-size: 100%;
 	margin: 1%;
 	font-size: 125%;
@@ -392,7 +395,7 @@ footer details p {
 }
 
 footer details > summary {
-  cursor: pointer;
+  	cursor: pointer;
 
 }
 
@@ -411,5 +414,5 @@ footer details > summary {
 	color: #0B0000;
 	padding: 10px;
 	margin: 10px;
-  text-align: center;
+  	text-align: center;
 }
