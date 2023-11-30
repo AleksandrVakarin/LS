@@ -24,7 +24,7 @@
 
 <!-- Admin panel -->
 	<div id="autorization-admin__form">
-			<span>Войти как администратор</span>
+		<span>Войти как администратор</span>
 		<form class="autorization-form">
 	        <input id="login" name="login" placeholder="Логин">
 	        <input id="password" type="password" name="password" placeholder="Пароль">
@@ -43,6 +43,15 @@
 		  	<label for="quantity">Количество:</label>
 		  	<input type="number" name="quantity" id="quantity" placeholder="Количество" required><br>
 		  	<button type="submit">Добавить</button>
+		</form>
+	</div>
+
+	<div id="delete-item__form">
+	    <span>Удаление товара по названию</span>
+		<form class="delete-form" action="deleteElem.php" method="POST">
+			<label for="delete">Название товара для удаления:</label>
+			<input type="text" id="delete" name="delete" placeholder="Название товара">
+		    <button type="submit">Удалить</button>
 		</form>
 	</div>
 
@@ -84,13 +93,13 @@
 				      	<div class="order-form">
 				        	<label class="order-form__content" id="label-name" for="text-input-name-item-1">Имя</label>
 				        	<div class="order-form__star-1">*
-				          		<input class="order-form__input" id="text-input-name-item-1" placeholder="Введите ваше имя">
+				          		<input class="order-form__input" id="text-input-name-item-1" placeholder="Введите имя">
 				        	</div>
 				    	</div>
 				      	<div class="order-form">
 				        	<label class="order-form__content" id="label-phone" for="text-input-phone-item-1">Номер телефона</label>
 				        	<div class="order-form__star-2">*
-				          		<input class="order-form__input" id="text-input-phone-item-1" placeholder="Введите ваш номер">
+				          		<input class="order-form__input" id="text-input-phone-item-1" placeholder="Введите номер">
 				        	</div>
 				      	</div>
 				      	<button id="order-form__button" value="submit">Заказать</button>
@@ -115,13 +124,13 @@
 				        <div class="order-form">
 				          	<label class="order-form__content" id="label-name" for="text-input-name-item-2">Имя</label>
 				          	<div class="order-form__star-1">*
-				            	<input class="order-form__input" id="text-input-name-item-2" placeholder="Введите ваше имя">
+				            	<input class="order-form__input" id="text-input-name-item-2" placeholder="Введите имя">
 				          	</div>
 				        </div>
 				        <div class="order-form">
 				          	<label class="order-form__content" id="label-phone" for="text-input-phone-item-2">Номер телефона</label>
 				          	<div class="order-form__star-2">*
-				            	<input class="order-form__input" id="text-input-phone-item-2" placeholder="Введите ваш номер">
+				            	<input class="order-form__input" id="text-input-phone-item-2" placeholder="Введите номер">
 				          	</div>
 				        </div>
 				        <button id="order-form__button" value="submit">Заказать</button>
@@ -146,13 +155,13 @@
 			        	<div class="order-form">
 			          		<label class="order-form__content" id="label-name" for="text-input-name-item-3">Имя</label>
 			          		<div class="order-form__star-1">*
-			            		<input class="order-form__input" id="text-input-name-item-3" placeholder="Введите ваше имя">
+			            		<input class="order-form__input" id="text-input-name-item-3" placeholder="Введите имя">
 			          		</div>
 			        	</div>
 			        	<div class="order-form">
 			          		<label class="order-form__content" id="label-phone" for="text-input-phone-item-3">Номер телефона</label>
 			          		<div class="order-form__star-2">*
-			            		<input class="order-form__input" id="text-input-phone-item-3" placeholder="Введите ваш номер">
+			            		<input class="order-form__input" id="text-input-phone-item-3" placeholder="Введите номер">
 			          		</div>
 			        	</div>
 			        	<button id="order-form__button" value="submit">Заказать</button>
@@ -177,7 +186,7 @@
 				        <div class="order-form">
 				            <label class="order-form__content" id="label-name" for="text-input-name-item-4">Имя</label>
 				            <div class="order-form__star-1">*
-				              	<input class="order-form__input" id="text-input-name-item-4" placeholder="Введите ваше имя">
+				              	<input class="order-form__input" id="text-input-name-item-4" placeholder="Введите имя">
 				            </div>
 				        </div>
 				        <div class="order-form">

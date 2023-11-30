@@ -195,6 +195,26 @@ h3 {
 	text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+  .cards {
+   	font-size: 100%;
+  }
+  .card {
+  	width: 115px;
+  }
+  .card p img {
+  	width: 80%;
+  }
+  h4 {
+  	padding: 0px;
+  	margin: 0px;
+  	border: none;
+  	margin: 7px 0px 5px 0px;
+  	border-radius: 2px;
+  }
+}
+
+
 #gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -210,9 +230,23 @@ h3 {
 	margin: 5px;
 }
 
+@media screen and (max-width: 480px) {
+  #gallery p {
+   	margin: 0px;
+   	padding: 2px;
+   }
+}
+
 #gallery p img {
 	margin: 5px;
 	border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  #gallery p img {
+   	margin: 0px;
+   	width: 95%;
+   }
 }
 
 #gallery {

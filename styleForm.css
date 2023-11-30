@@ -66,3 +66,21 @@
     padding: 2px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .order-form__input {
+    font-size: 12px;
+  }
+  #order-form__button {
+    width: 90px;
+  }
+  .order-form__content {
+    font-size: 12px;
+  }
+  .order-form__star-1 {
+    display: inline;
+  }
+  .order-form__star-2 {
+    display: inline;
+  }
+}

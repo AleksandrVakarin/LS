@@ -98,7 +98,7 @@ for (let i = 0; i < items.length; i++) {
       const errorSpan = document.createElement('span');
       errorSpan.className = 'error';
       errorSpan.textContent = message;
-      errorSpan.style = 'color: red; margin-left: 25px; font-size: 17px; font-style: italic; display: block';
+      errorSpan.style = 'color: red; margin-left: 5px; font-size: 17px; font-style: italic; display: block';
 
       container.appendChild(errorSpan);
     }

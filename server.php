@@ -49,13 +49,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     $element .= "<div class='order-form'>";
                     $element .= "<label class='order-form__content' id='label-name' for='text-input-name-item-$counter'>Имя</label>";
                     $element .= "<div class='order-form__star-1'>*";
-                    $element .= "<input class='order-form__input' id='text-input-name-item-$counter' placeholder='Введите ваше имя'>";
+                    $element .= "<input class='order-form__input' id='text-input-name-item-$counter' placeholder='Введите имя'>";
                     $element .= "</div>";
                     $element .= "</div>";
                     $element .= "<div class='order-form'>";
                     $element .= "<label class='order-form__content' id='label-phone' for='text-input-phone-item-$counter'>Номер телефона</label>";
                     $element .= "<div class='order-form__star-2'>*";
-                    $element .= "<input class='order-form__input' id='text-input-phone-item-$counter' placeholder='Введите ваш номер'>";
+                    $element .= "<input class='order-form__input' id='text-input-phone-item-$counter' placeholder='Введите номер'>";
                     $element .= "</div>";
                     $element .= "</div>";
                     $element .= "<button id='order-form__button' value='submit'>Заказать</button>";

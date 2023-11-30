@@ -3,6 +3,7 @@
 const showAutorAdminPanel = document.querySelector('#show-autorization-admin__panel');
 const autorAdminForm = document.querySelector('#autorization-admin__form');
 const addItemForm = document.getElementById('add-item__form');
+const deleteItemForm = document.getElementById('delete-item__form');
 
 let isFormVisible = false;
 hideForm();
@@ -20,6 +21,7 @@ function showForm() {
 function hideForm() {
   autorAdminForm.style.display = 'none';
   addItemForm.style.display = 'none'; // Скрываем также форму с id="add-item__form"
+  deleteItemForm.style.display= 'none';
   document.getElementById('login').value = '';
   document.getElementById('password').value = '';
   isFormVisible = false;
@@ -37,6 +39,7 @@ function handleSubmit(event) {
   if (login === 'Lev' && password === '1111') {
     // Показываем форму с id="add-item__form"
     addItemForm.style.display = 'block';
+    deleteItemForm.style.display= 'block';
   } else {
     alert('Неверный логин или пароль');
   }
